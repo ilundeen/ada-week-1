@@ -5,7 +5,37 @@ date: "September 15, 2016"
 output: html_document
 ---
 
-m<-matrix(data=c(1,2,3,4),nrow=2,ncol=2) m m<-matrix(data=c(1,2,3,4,5,6),nrow=2,ncol=3,byrow=TRUE) m V1<-c(1,2,3,4) V2<-c(6,7,8,9) m1<-rbind(V1,V2) m1 m2<-cbind(V1,V2) m2 class(m1) class(m2) class(V1) dim(m1) dim(m2) colnames(m2) m2[,2] rownames(m2) str(m2) #an array can have as many dimensions as you want - much more general of a structure #here the data is a set of numbers from 1 to 90 divided into 3 dimensions #here 5 is the number of rows per block, 6 is the number of columns per block, and 3 is the number of blocks a<-array(data=1:90,dim=c(5,6,3)) a v<-1:100 v #using brackets to get out particular subsets of information from a matrix/array/etc #you are asking for the vector from index position 1 to 15 v[1:15] #you can also use a vector to pull out specific things v[c(2,4,6,8,10)] #you can also use a function or calc to subset a vector v<-101:200 v[seq(from=1,to=100,by=2)]
+m<-matrix(data=c(1,2,3,4),nrow=2,ncol=2) 
+m m<-matrix(data=c(1,2,3,4,5,6),nrow=2,ncol=3,byrow=TRUE) 
+m V1<-c(1,2,3,4) 
+V2<-c(6,7,8,9) 
+m1<-rbind(V1,V2) 
+m1 
+m2<-cbind(V1,V2) 
+m2 
+class(m1) 
+class(m2) 
+class(V1) 
+dim(m1) 
+dim(m2) 
+colnames(m2) 
+m2[,2] 
+rownames(m2) 
+str(m2) 
+#an array can have as many dimensions as you want - much more general of a structure 
+#here the data is a set of numbers from 1 to 90 divided into 3 dimensions 
+#here 5 is the number of rows per block, 6 is the number of columns per block, and 3 is the number of blocks 
+a<-array(data=1:90,dim=c(5,6,3)) 
+a v<-1:100 
+v 
+#using brackets to get out particular subsets of information from a matrix/array/etc 
+#you are asking for the vector from index position 1 to 15 
+v[1:15] 
+#you can also use a vector to pull out specific things 
+v[c(2,4,6,8,10)] 
+#you can also use a function or calc to subset a vector 
+v<-101:200 
+v[seq(from=1,to=100,by=2)]
 
 
 library(stringr)
